@@ -1,49 +1,31 @@
 //Men reducers are so clean! they really reducers
 
-import { useState } from "react";
-import people from "./data/data";
-import Card from "./components/Card";
+import { Switch, Route } from "react-router-dom";
+import ProjectLinks from "./components/ProjectLinks";
+import RandomUser from "./RandomUser";
+import MealTabs from "./MealTabs";
+import SideTabs from "./SideTabs";
+import DataGenerator from "./DataGenerator";
+import ColorGenerator from "./ColorGenerator";
+import FAQ from "./FAQ";
+import Home from "./components/Home";
 
 const App = () => {
-  const [index, setIndex] = useState(0);
-  const [person, setPerson] = useState(people);
-
-  function checkNumber(num) {
-    if (num > person.length - 1) {
-      return 0;
-    }
-    if (num < 0) {
-      return people.length - 1;
-    } else {
-      return num;
-    }
-  }
-  const handleNext = () => {
-    let newNum = index + 1;
-    setIndex(checkNumber(newNum));
-  };
-
-  const handlePrev = () => {
-    let newNum = index - 1;
-    setIndex(checkNumber(newNum));
-  };
-
-  const handleRandomUser = () => {
-    let randomNum = Math.trunc(Math.random() * people.length);
-    if (randomNum === index) {
-      randomNum = index + 1;
-    }
-
-    setIndex(randomNum);
-  };
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <Card
-        {...person[index]}
-        handleNext={handleNext}
-        handlePrev={handlePrev}
-        handleRandomUser={handleRandomUser}
-      />
+    <div className="blog min-h-screen">
+      <div className="p-4 w-10/12 mx-auto ">
+        <ProjectLinks />
+        <Switch>
+          <Route exact path={"/"} component={Home} />
+          <Route path={"/randomUser"} component={RandomUser} />
+          <Route path={"/mealTabs"} component={MealTabs} />
+          <Route path={"/sideTabs"} component={SideTabs} />
+
+          <Route path={"/Lorem"} component={DataGenerator} />
+          <Route path={"/colorGen"} component={ColorGenerator} />
+          <Route path={"/Faq"} component={FAQ} />
+        </Switch>
+      </div>
     </div>
   );
 };

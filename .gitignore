@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+//My Observation using hooks about getting individual items
+Getting an individual item from a dynamically generated list... put the state to be toggled in the component you will give each individual a state of its own...
