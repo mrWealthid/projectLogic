@@ -1,12 +1,12 @@
 //Men reducers are so clean! they really reducers
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 import { Profile } from "./data/data";
 import { FiChevronRight } from "react-icons/fi";
 
 const SideTabs = () => {
-  const [myProfile, SetMyProfile] = useState(Profile);
+  const [myProfile, setMyProfile] = useState(Profile);
 
   const [value, SetValue] = useState(0);
 

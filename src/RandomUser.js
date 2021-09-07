@@ -1,6 +1,6 @@
 //Men reducers are so clean! they really reducers
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { people } from "./data/data";
 import Card from "./components/Card";
 // import Pic0 from "./components/Assets/pic1.png";

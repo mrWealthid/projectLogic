@@ -1,6 +1,6 @@
 //Men reducers are so clean! they really reducers
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 import { meals } from "./data/data";
 import Menu from "./components/Menu";

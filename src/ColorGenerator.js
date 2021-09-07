@@ -1,6 +1,6 @@
 //Men reducers are so clean! they really reducers
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 import Values from "values.js";
 import SingleColor from "./components/SingleColor";
