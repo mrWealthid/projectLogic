@@ -13,7 +13,7 @@ import Home from "./components/Home";
 const App = () => {
   return (
     <div className="blog min-h-screen">
-      <div className="p-4 w-10/12 mx-auto ">
+      <div className="p-4 w-11/12 md:w-10/12 mx-auto ">
         <ProjectLinks />
         <Switch>
           <Route exact path={"/"} component={Home} />

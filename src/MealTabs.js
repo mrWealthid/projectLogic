@@ -1,6 +1,6 @@
 //Men reducers are so clean! they really reducers
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { meals } from "./data/data";
 import Menu from "./components/Menu";
@@ -13,11 +13,7 @@ const MealTabs = () => {
   ];
   const [mymeals, setMyMeals] = useState(meals);
 
-  const [categories, setCategories] = useState([]);
-
-  useEffect(() => {
-    setCategories(UniqueCategories);
-  }, []);
+  const [categories, setCategories] = useState(UniqueCategories);
 
   const handleMeals = (category) => {
     if (category === "All") {
