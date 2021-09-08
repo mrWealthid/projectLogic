@@ -9,6 +9,7 @@ import DataGenerator from "./components/DataGenerator";
 import ColorGenerator from "./components/ColorGenerator";
 import FAQ from "./components/FAQ";
 import Home from "./components/Home";
+import GroceryBud from "./components/GroceryBud";
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
           <Route path={"/Lorem"} component={DataGenerator} />
           <Route path={"/colorGen"} component={ColorGenerator} />
           <Route path={"/Faq"} component={FAQ} />
-          <Route path={"/grocery"} component={FAQ} />
+          <Route path={"/grocery"} component={GroceryBud} />
         </Switch>
       </div>
     </div>
