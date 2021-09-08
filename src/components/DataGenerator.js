@@ -1,7 +1,7 @@
 //Men reducers are so clean! they really reducers
 
 import React, { useState } from "react";
-import { Word } from "./data/data";
+import { Word } from "../data/data";
 
 const DataGenerator = () => {
   const [count, SetCount] = useState(0);

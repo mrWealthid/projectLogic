@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 const QuestionCard = ({ title, info }) => {
   const [isOpen, setIsOpen] = useState(false);
 

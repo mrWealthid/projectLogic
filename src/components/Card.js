@@ -3,8 +3,8 @@ import React from "react";
 const Card = ({
   name,
   job,
+  index,
   desc,
-  img,
   handleNext,
   handlePrev,
   handleRandomUser,
@@ -13,7 +13,11 @@ const Card = ({
     <div className="p-4 mx-auto bg-gray-100 my-6 shadow w-6/12 font-Poppins">
       <div className="flex gap-3">
         <div className="w-3/4">
-          <img className="w-5/6 rounded-full " src={img} alt="pic" />
+          <img
+            className="w-5/6 rounded-full "
+            src={`../Assets/pic${index}.png`}
+            alt="pic"
+          />
         </div>{" "}
         <div className="max-w-sm">
           <p>{name}</p>

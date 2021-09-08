@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import { Profile } from "./data/data";
+import { Profile } from "../data/data";
 import { FiChevronRight } from "react-icons/fi";
 
 const SideTabs = () => {
@@ -16,18 +16,18 @@ const SideTabs = () => {
       <h1 className="text-3xl text-center border-b-2 p-3 text-sm md:text-base text-gray-700">
         Working Experience
       </h1>
-      <div className="flex flex-col md:flex-row justify-center md:justify-between">
+      <div className="flex flex-col lg:flex-row justify-center md:justify-between">
         <div>
           {myProfile.map((item, index) => (
             <p
               key={index}
-              className="inline-block md:block md:text-center mb-5 md:mb-0"
+              className="inline-block lg:block lg:text-center mb-5 md:mb-0"
             >
               <button
                 onClick={() => SetValue(index)}
                 className={`${
                   index === value && "bg-gray-700 text-white"
-                } bg-gray-300 mr-2 md:mr-0 rounded-lg py-3 px-6 text-sm md:text-base my-2
+                } bg-gray-300 mr-2 lg:mr-0 rounded-lg py-3 px-6 text-sm md:text-base my-2
                 } `}
               >
                 {item.title}

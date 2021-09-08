@@ -1,11 +1,8 @@
 //Men reducers are so clean! they really reducers
 
 import React, { useState } from "react";
-import { people } from "./data/data";
-import Card from "./components/Card";
-// import Pic0 from "./components/Assets/pic1.png";
-// import Pic1 from "./components/Assets/pic2.png";
-// import Pic2 from "./components/Assets/pic3.png";
+import { people } from "../data/data";
+import Card from "./Card";
 
 const RandomUser = () => {
   const [index, setIndex] = useState(0);
@@ -43,6 +40,7 @@ const RandomUser = () => {
     <div className="flex justify-center items-center min-h-screen">
       <Card
         {...person[index]}
+        index={index}
         handleNext={handleNext}
         handlePrev={handlePrev}
         handleRandomUser={handleRandomUser}

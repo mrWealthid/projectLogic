@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 
-import { meals } from "./data/data";
-import Menu from "./components/Menu";
-import Categories from "./components/Categories";
+import { meals } from "../data/data";
+import Menu from "./Menu";
+import Categories from "./Categories";
 
 const MealTabs = () => {
   const UniqueCategories = [

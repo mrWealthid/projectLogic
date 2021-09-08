@@ -1,7 +1,7 @@
 //Men reducers are so clean! they really reducers
 import React from "react";
-import { questions } from "./data/data";
-import QuestionCard from "./components/QuestionCard";
+import { questions } from "../data/data";
+import QuestionCard from "./QuestionCard";
 
 const FAQ = () => {
   return (

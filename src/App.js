@@ -2,12 +2,12 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import ProjectLinks from "./components/ProjectLinks";
-import RandomUser from "./RandomUser";
-import MealTabs from "./MealTabs";
-import SideTabs from "./SideTabs";
-import DataGenerator from "./DataGenerator";
-import ColorGenerator from "./ColorGenerator";
-import FAQ from "./FAQ";
+import RandomUser from "./components/RandomUser";
+import MealTabs from "./components/MealTabs";
+import SideTabs from "./components/SideTabs";
+import DataGenerator from "./components/DataGenerator";
+import ColorGenerator from "./components/ColorGenerator";
+import FAQ from "./components/FAQ";
 import Home from "./components/Home";
 
 const App = () => {
