@@ -24,6 +24,7 @@ const App = () => {
           <Route path={"/Lorem"} component={DataGenerator} />
           <Route path={"/colorGen"} component={ColorGenerator} />
           <Route path={"/Faq"} component={FAQ} />
+          <Route path={"/grocery"} component={FAQ} />
         </Switch>
       </div>
     </div>
