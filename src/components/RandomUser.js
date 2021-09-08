@@ -1,12 +1,16 @@
 //Men reducers are so clean! they really reducers
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { people } from "../data/data";
 import Card from "./Card";
 
 const RandomUser = () => {
   const [index, setIndex] = useState(0);
-  const [person, setPerson] = useState(people);
+  const [person, setPerson] = useState([]);
+
+  useEffect(() => {
+    setPerson(people);
+  }, []);
 
   function checkNumber(num) {
     if (num > person.length - 1) {

@@ -1,19 +1,23 @@
 //Men reducers are so clean! they really reducers
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { meals } from "../data/data";
 import Menu from "./Menu";
 import Categories from "./Categories";
 
 const MealTabs = () => {
-  const UniqueCategories = [
-    "All",
-    ...new Set(meals.map((myCategory) => myCategory.category)),
-  ];
   const [mymeals, setMyMeals] = useState(meals);
 
-  const [categories, setCategories] = useState(UniqueCategories);
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const UniqueCategories = [
+      "All",
+      ...new Set(meals.map((myCategory) => myCategory.category)),
+    ];
+    setCategories(UniqueCategories);
+  }, []);
 
   const handleMeals = (category) => {
     if (category === "All") {

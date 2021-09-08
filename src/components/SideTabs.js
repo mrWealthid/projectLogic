@@ -1,6 +1,6 @@
 //Men reducers are so clean! they really reducers
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Profile } from "../data/data";
 import { FiChevronRight } from "react-icons/fi";
@@ -9,6 +9,10 @@ const SideTabs = () => {
   const [myProfile, setMyProfile] = useState(Profile);
 
   const [value, SetValue] = useState(0);
+
+  useEffect(() => {
+    setMyProfile(Profile);
+  }, []);
 
   const { title, info } = myProfile[value];
   return (
