@@ -27,18 +27,17 @@
 
 .pop_up {
   position: absolute;
-  /* top: 155%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.7);
-  z-index: 50; */
+  top: 125px;
+  transform: translate(10%, 19%);
+  z-index: 50;
 }
 
 .pointer {
   position: absolute;
-  bottom: 76px;
+  bottom: 97%;
   transform: rotate(90deg);
   width: 15px;
-  left: 0px;
+  left: 1px;
 }
 .blog {
   background-color: #f0f4fd;

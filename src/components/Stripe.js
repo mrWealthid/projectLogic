@@ -2,17 +2,16 @@ import React, { useState } from "react";
 
 import StripeNav from "./StripeNav";
 import StripeHero from "./StripeHero";
-import StripeSubMenu from "./StripeSubMenu";
-import StripeSideBar from "./StripeSideBar";
+
+import { sublinks } from "../data/data";
 
 const Stripe = () => {
-  const [subMenuOpen, setsubMenuOpen] = useState(false);
+  const [value, setValue] = useState(sublinks);
   return (
     <div>
-      <StripeNav setsubMenuOpen={setsubMenuOpen} subMenuOpen={subMenuOpen} />
-      <StripeSideBar />
-      <StripeHero setsubMenuOpen={setsubMenuOpen} subMenuOpen={subMenuOpen} />
-      <StripeSubMenu />
+      <StripeNav value={value} setValue={setValue} />
+
+      <StripeHero setValue={setValue} />
     </div>
   );
 };

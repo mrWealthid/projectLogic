@@ -1,9 +1,10 @@
 import React from "react";
+import { sublinks } from "../data/data";
 
-const StripeHero = ({ setsubMenuOpen, subMenuOpen }) => {
+const StripeHero = ({ setValue }) => {
   return (
     <div
-      onMouseOver={() => setsubMenuOpen(false)}
+      onMouseOver={() => setValue(sublinks)}
       className="min-h-screen justify-center flex items-center"
     >
       Stripe Hero
