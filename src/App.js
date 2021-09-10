@@ -10,6 +10,9 @@ import ColorGenerator from "./components/ColorGenerator";
 import FAQ from "./components/FAQ";
 import Home from "./components/Home";
 import GroceryBud from "./components/GroceryBud";
+import Navbar from "./components/Navbar";
+import Modal from "./components/Modal";
+import Stripe from "./components/Stripe";
 
 const App = () => {
   return (
@@ -26,6 +29,9 @@ const App = () => {
           <Route path={"/colorGen"} component={ColorGenerator} />
           <Route path={"/Faq"} component={FAQ} />
           <Route path={"/grocery"} component={GroceryBud} />
+          <Route path={"/navbar"} component={Navbar} />
+          <Route path={"/modal"} component={Modal} />
+          <Route path={"/stripe"} component={Stripe} />
         </Switch>
       </div>
     </div>
