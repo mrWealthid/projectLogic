@@ -3,26 +3,26 @@ import React from "react";
 const Card = ({
   name,
   job,
-  index,
-  desc,
+  image,
+  text,
   handleNext,
   handlePrev,
   handleRandomUser,
 }) => {
   return (
     <div className="p-4 mx-auto bg-gray-100 my-6 shadow w-6/12 font-Poppins">
-      <div className="flex gap-3">
+      <div className="flex  items-center gap-3">
         <div className="w-3/4">
           <img
-            className="w-5/6 rounded-full "
-            src={`../Assets/pic${index}.png`}
+            className="w-32 h-32 object-cover  rounded-full "
+            src={image}
             alt="pic"
           />
         </div>{" "}
-        <div className="max-w-sm">
-          <p>{name}</p>
-          <p>{job}</p>
-          <p>{desc}</p>
+        <div className="max-w-sm w-5/6">
+          <p className="text-lg capitalize">{name}</p>
+          <p className="text-sm mb-2 capitalize">{job}</p>
+          <p className="text-sm">{text}</p>
         </div>
       </div>
       <div className="flex justify-between mt-4">
