@@ -13,6 +13,8 @@ import GroceryBud from "./components/GroceryBud";
 import Navbar from "./components/Navbar";
 import Modal from "./components/Modal";
 import Stripe from "./components/Stripe";
+import Forms from "./components/Forms";
+import Cart from "./components/Cart";
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
           <Route path={"/navbar"} component={Navbar} />
           <Route path={"/modal"} component={Modal} />
           <Route path={"/stripe"} component={Stripe} />
+          <Route path={"/form"} component={Forms} />
+          <Route path={"/cart"} component={Cart} />
         </Switch>
       </div>
     </div>
