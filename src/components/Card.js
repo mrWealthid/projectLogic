@@ -10,7 +10,7 @@ const Card = ({
   handleRandomUser,
 }) => {
   return (
-    <div className="p-4 mx-auto bg-gray-100 my-6 shadow w-6/12 font-Poppins">
+    <div className="p-4 mx-auto bg-gray-100 my-6 shadow w-full md:w-6/12 font-Poppins">
       <div className="flex  items-center gap-3">
         <div className="w-3/4">
           <img

@@ -14,7 +14,8 @@ import Navbar from "./components/Navbar";
 import Modal from "./components/Modal";
 import Stripe from "./components/Stripe";
 import Forms from "./components/Forms";
-import Cart from "./components/Cart";
+import Cart from "./components/State_Cart/Cart";
+import CartReducer from "./components/CartReducer";
 
 const App = () => {
   return (
@@ -26,7 +27,6 @@ const App = () => {
           <Route path={"/randomUser"} component={RandomUser} />
           <Route path={"/mealTabs"} component={MealTabs} />
           <Route path={"/sideTabs"} component={SideTabs} />
-
           <Route path={"/Lorem"} component={DataGenerator} />
           <Route path={"/colorGen"} component={ColorGenerator} />
           <Route path={"/Faq"} component={FAQ} />
@@ -36,6 +36,7 @@ const App = () => {
           <Route path={"/stripe"} component={Stripe} />
           <Route path={"/form"} component={Forms} />
           <Route path={"/cart"} component={Cart} />
+          <Route path={"/mycart"} component={CartReducer} />
         </Switch>
       </div>
     </div>

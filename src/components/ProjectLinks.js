@@ -53,6 +53,10 @@ const ProjectLinks = () => {
       <NavLink className="my-2" activeStyle={mystyle} to="/cart">
         Cart
       </NavLink>
+
+      <NavLink className="my-2" activeStyle={mystyle} to="/mycart">
+        myCart
+      </NavLink>
     </div>
   );
 };

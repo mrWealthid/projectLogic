@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { products } from "../data/data";
+import { products } from "../../data/data";
 import CartItems from "./CartItems";
 import { FaShoppingBag } from "react-icons/fa";
 
