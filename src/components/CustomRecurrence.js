@@ -4,14 +4,12 @@ import React, { useState } from "react";
 function CustomRecurrence() {
   const [daysTag, setDaysTag] = useState("1");
   const [occurrence, setOccurrence] = useState("1");
-  const [pickDate, setPickDate] = useState(new Date());
-  const [isRadioClicked, setIsRadioClicked] = useState();
+  // const [pickDate, setPickDate] = useState(new Date());
+  // const [isRadioClicked, setIsRadioClicked] = useState();
 
-  console.log(pickDate);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
 
   const weekDays = [
     {
@@ -47,7 +45,7 @@ function CustomRecurrence() {
   return (
     <div className="custom_recurrence_modal">
       <h4>Custom recurrence</h4>
-      <form action="" onSubmit={handleSubmit}>
+      <form>
         <div className="repeat_frequency">
           <p className="block_title">Repeat every</p>
           <div className="repeat_frequency_inputs">

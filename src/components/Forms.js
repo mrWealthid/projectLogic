@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Select from "./Select";
-import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 
 //radio buttons are are combination of both the input type-text and input type-checkbox ... it is going to have both a checked and and value prop
 

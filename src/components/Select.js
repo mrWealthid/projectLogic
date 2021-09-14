@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+import { Fragment } from "react";
 
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 
@@ -14,7 +14,7 @@ import CustomRecurrence from "./CustomRecurrence";
 // ];
 
 export default function Select({ people, selected, setSelected }) {
-  const [active, setActive] = useState(true);
+  // const [active, setActive] = useState(true);
   return (
     <div className="w-72">
       {selected.name === "Wealth" ? (

@@ -5,8 +5,8 @@ import { FaShoppingBag } from "react-icons/fa";
 
 const Cart = () => {
   const [cart, setCart] = useState(products);
-  const [cartlength, setCartLength] = useState(0);
-  const [total, setTotal] = useState(0);
+  const [cartlength, setCartLength] = useState(null);
+  const [total, setTotal] = useState(null);
   const [alert, setAlert] = useState({
     type: false,
     msg: "",
@@ -67,10 +67,7 @@ const Cart = () => {
   };
 
   return (
-    <div>
-      {alert.type ? (
-        <p className=" bg-white p-3 text-center mb-2 ">{alert.msg}</p>
-      ) : null}
+    <div className="flex flex-col flex-wrap">
       <header className="flex items-center justify-between bg-gray-700 text-white p-4">
         <div>Wealth Cart</div>
 
@@ -81,12 +78,17 @@ const Cart = () => {
           </p>
         </div>
       </header>
+
+      {alert.type ? (
+        <p className=" bg-white p-3 text-center my-3 ">{alert.msg}</p>
+      ) : null}
       {cart.length === 0 ? (
         <p className="text-center mt-10 text-lg">No More Item in Cart</p>
       ) : (
         <div>
           {cart.map((item) => (
             <CartItems
+              key={item.id}
               {...item}
               handleIncrease={handleIncrease}
               handleDecrease={handleDecrease}
