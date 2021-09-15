@@ -16,6 +16,8 @@ import Stripe from "./components/Stripe";
 import Forms from "./components/Forms";
 import Cart from "./components/State_Cart/Cart";
 import CartReducer from "./components/CartReducer";
+import Cocktail from "./components/Cocktail";
+import SingleCocktail from "./components/SingleCocktail";
 
 const App = () => {
   return (
@@ -37,6 +39,8 @@ const App = () => {
           <Route path={"/form"} component={Forms} />
           <Route path={"/cart"} component={Cart} />
           <Route path={"/mycart"} component={CartReducer} />
+          <Route path={"/cocktail"} component={Cocktail} />
+          <Route path={"/cocktails/:id"} component={SingleCocktail} />
         </Switch>
       </div>
     </div>

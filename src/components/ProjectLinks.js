@@ -57,6 +57,10 @@ const ProjectLinks = () => {
       <NavLink className="my-2" activeStyle={mystyle} to="/mycart">
         myCart
       </NavLink>
+
+      <NavLink className="my-2" activeStyle={mystyle} to="/cocktail">
+        Cocktail
+      </NavLink>
     </div>
   );
 };
