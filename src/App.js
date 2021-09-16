@@ -18,6 +18,7 @@ import Cart from "./components/State_Cart/Cart";
 import CartReducer from "./components/CartReducer";
 import Cocktail from "./components/Cocktail";
 import SingleCocktail from "./components/SingleCocktail";
+import Shopify from "./components/Shopify";
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
           <Route path={"/mycart"} component={CartReducer} />
           <Route path={"/cocktail"} component={Cocktail} />
           <Route path={"/cocktails/:id"} component={SingleCocktail} />
+          <Route path={"/shopify"} component={Shopify} />
         </Switch>
       </div>
     </div>

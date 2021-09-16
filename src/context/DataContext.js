@@ -93,6 +93,8 @@ const DataProvider = ({ children }) => {
     fetchData();
   }, []);
 
+  const [count, setCount] = useState(0);
+
   return (
     <DataContext.Provider
       value={{
@@ -104,6 +106,8 @@ const DataProvider = ({ children }) => {
         handleDel,
         dispatch,
         clearCart,
+        count,
+        setCount,
       }}
     >
       {children}
