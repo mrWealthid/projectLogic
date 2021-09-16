@@ -26,6 +26,7 @@ module.exports = {
         rebounce: "rebounce 2s inifinte",
         float: "float 3s infinite",
         refloat: "refloat 3s infinite",
+        like: "like 0.5s ease-in-out",
       },
       keyframes: {
         spin: {
@@ -63,6 +64,18 @@ module.exports = {
           "50%": {
             transform: "translateY(-25px)",
             animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+
+        like: {
+          "100%": {
+            transform: "scale(2.0)",
+            // -webkit-transform: "rotate(-15deg) scale(1.3)",
+            // -moz-transform: "rotate(-15deg) scale(1.3)",
+            // -ms-transform: "rotate(-15deg) scale(1.3)",
+            // -o-transform: "rotate(-15deg) scale(1.3)",
+            filter: "blur(0.5px)",
+            // -webkit-filter: "blur(0.5px)",
           },
         },
         float: {
